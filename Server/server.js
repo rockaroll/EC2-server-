@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 
 //server
 const app = express() 
-const PORT = process.env.PORT || 5000 
+const PORT = process.env.PORT || 6000
 const router = express.Router()
 dotenv.config()
 
@@ -20,6 +20,6 @@ router.get('/title', async(req,res) => {
     res.send('The server title is working')
 })
 
-// app.use(router)
+//app.use(router)
 
 app.listen(PORT, () => {console.log(`Server is running on port : ${PORT}`)})
