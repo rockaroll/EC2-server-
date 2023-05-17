@@ -20,6 +20,6 @@ router.get('/title', async(req,res) => {
     res.send('The server title is working')
 })
 
-app.use(router)
+// app.use(router)
 
 app.listen(PORT, () => {console.log(`Server is running on port : ${PORT}`)})
